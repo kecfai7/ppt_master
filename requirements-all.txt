@@ -1,0 +1,16 @@
+# ==============================================================================
+# PPT Master - Full Advanced Requirements (AI / Whisper / Vision)
+# ==============================================================================
+-r requirements.txt
+
+# 1. Computer Vision & PDF Deep Parsing
+opencv-python>=4.9.0
+PyMuPDF>=1.24.0
+
+# 2. Generative AI
+google-genai>=2.0.0
+google-auth>=2.28.0
+
+# 3. Speech Recognition & Deep Learning (Optional / Large)
+torch>=2.2.0
+whisper>=1.1.10

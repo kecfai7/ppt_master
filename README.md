@@ -26,6 +26,30 @@ AI 시대 교육의 문법을 바꾸는 **동적 프레젠테이션 & 수학교�
 
 ---
 
+## 💻 새로운 PC에서 설치 및 실행 방법
+
+### 방법 A: 원클릭 자동 설치 (가장 추천)
+저장소를 다운로드(또는 git clone)한 후 **`다른PC_자동설치.bat`** 파일을 더블 클릭하기만 하면 됩니다:
+1. Python 실행 환경 자동 감지
+2. 가상환경(`.venv`) 자동 생성
+3. `requirements.txt` 필수 라이브러리 일괄 설치
+4. `Paperlogy` 9종 글꼴 Windows 시스템 및 파워포인트 영구 등록
+
+### 방법 B: 수동 커맨드라인 설치
+```bash
+# 1. 가상환경 생성 및 활성화
+python -m venv .venv
+.venv\Scripts\activate
+
+# 2. 필수 패키지 설치
+pip install -r requirements.txt
+
+# 3. Paperlogy 글꼴 등록
+Paperlogy_폰트_시스템설치.bat
+```
+
+---
+
 ## 🚀 빠른 시작 가이드 (로컬 실행)
 
 ### 원클릭 배치 파일
