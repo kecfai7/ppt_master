@@ -25,6 +25,7 @@ $RECYCLE.BIN/
 temp_*.js
 test_*.png
 test_*.pptx
+*.zip
 
 # Submodules / Sub-repositories
 ppt-master/
