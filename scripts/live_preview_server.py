@@ -18,7 +18,7 @@ LP_NOTES_DIR = os.path.join(PROJECT_DIR, "notes")
 MATH_SVG_DIR = os.path.join(BASE_DIR, "projects", "math_assets", "svg")
 MATH_NOTES_DIR = os.path.join(BASE_DIR, "projects", "math_assets", "notes")
 MATH_IMG_DIR = os.path.join(BASE_DIR, "projects", "math_assets")
-MATH_FONTS_DIR = os.path.join(BASE_DIR, "projects", "math_assets", "fonts")
+MATH_FONTS_DIR = os.path.join(BASE_DIR, "Paperlogy") if os.path.exists(os.path.join(BASE_DIR, "Paperlogy")) else os.path.join(BASE_DIR, "projects", "math_assets", "fonts")
 
 ANNOTATIONS_FILE = os.path.join(PROJECT_DIR, "annotations.json")
 

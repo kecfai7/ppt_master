@@ -49,8 +49,8 @@ if os.path.exists(img_src):
         shutil.copy2(os.path.join(img_src, f), os.path.join(PUBLIC_DIR, "images", f))
 print("Copied Images")
 
-# 6. Copy Fonts
-font_src = os.path.join(BASE_DIR, "projects", "math_assets", "fonts")
+# 6. Copy Fonts (Prioritize Paperlogy folder)
+font_src = os.path.join(BASE_DIR, "Paperlogy") if os.path.exists(os.path.join(BASE_DIR, "Paperlogy")) else os.path.join(BASE_DIR, "projects", "math_assets", "fonts")
 if os.path.exists(font_src):
     for f in os.listdir(font_src):
         if f.endswith(".ttf"):

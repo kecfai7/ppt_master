@@ -1,40 +1,44 @@
 @echo off
-title Paperlogy ÆùÆ® ½Ã½ºÅÛ Àü¿ª ¼³Ä¡±â
+chcp 65001 >nul
+title Paperlogy í°íŠ¸ ì‹œìŠ¤í…œ ë“±ë¡ ì„¤ì¹˜ê¸°
 cd /d "%~dp0"
 
 echo ================================================================
-echo   Paperlogy (ÆäÀÌÆÛ·ÎÁö) ÆùÆ® - Windows ½Ã½ºÅÛ(ÆÄ¿öÆ÷ÀÎÆ®) Àü¿ª µî·Ï
+echo   Paperlogy (í˜ì´í¼ë¡œì§€) í°íŠ¸ - Windows ì‹œìŠ¤í…œ(íŒŒì›Œí¬ì¸íŠ¸) ì˜êµ¬ ë“±ë¡
 echo ================================================================
 echo.
 
 :: Check Administrator Privileges
 net session >nul 2>&1
 if %errorlevel% neq 0 (
-    echo [¾Ë¸²] °ü¸®ÀÚ ±ÇÇÑÀÌ ÇÊ¿äÇÕ´Ï´Ù.
-    echo ÀÌ ÆÄÀÏÀ» ¸¶¿ì½º ¿ìÅ¬¸¯ÇÑ ÈÄ [°ü¸®ÀÚ ±ÇÇÑÀ¸·Î ½ÇÇà]À» Å¬¸¯ÇØ ÁÖ¼¼¿ä!
+    echo [ì•Œë¦¼] ê´€ë¦¬ì ê¶Œí•œì´ í•„ìš”í•©ë‹ˆë‹¤.
+    echo ì´ ë°°ì¹˜íŒŒì¼ì„ ë§ˆìš°ìŠ¤ ìš°í´ë¦­í•œ í›„ [ê´€ë¦¬ì ê¶Œí•œìœ¼ë¡œ ì‹¤í–‰]ì„ í´ë¦­í•´ ì£¼ì„¸ìš”!
     echo ================================================================
     pause
     exit /b
 )
 
-echo [1/2] projects\math_assets\fonts Æú´õÀÇ 9°³ ÆùÆ®¸¦ C:\Windows\Fonts ·Î º¹»ç Áß...
-copy /y "%~dp0projects\math_assets\fonts\Paperlogy-*.ttf" "%WINDIR%\Fonts\" >nul
+set "FONT_SOURCE=%~dp0Paperlogy"
+if not exist "%FONT_SOURCE%\Paperlogy-*.ttf" (
+    set "FONT_SOURCE=%~dp0projects\math_assets\fonts"
+)
 
-echo [2/2] Windows ·¹Áö½ºÆ®¸®¿¡ Á¤½Ä ½Ã½ºÅÛ ÆùÆ®·Î µî·Ï Áß...
-powershell -NoProfile -Command "
-$fonts = Get-ChildItem '%~dp0projects\math_assets\fonts\Paperlogy-*.ttf';
-foreach ($f in $fonts) {
-    $fn = $f.BaseName;
-    # Register both English and Korean family names in registry
-    New-ItemProperty -Path 'HKLM:\Software\Microsoft\Windows NT\CurrentVersion\Fonts' -Name \"$fn (TrueType)\" -Value $f.Name -PropertyType String -Force | Out-Null;
-}
-New-ItemProperty -Path 'HKLM:\Software\Microsoft\Windows NT\CurrentVersion\Fonts' -Name 'Paperlogy (TrueType)' -Value 'Paperlogy-4Regular.ttf' -PropertyType String -Force | Out-Null;
-New-ItemProperty -Path 'HKLM:\Software\Microsoft\Windows NT\CurrentVersion\Fonts' -Name 'Paperlogy Bold (TrueType)' -Value 'Paperlogy-7Bold.ttf' -PropertyType String -Force | Out-Null;
-"
+echo [1/2] %FONT_SOURCE% í´ë”ì˜ 9ì¢… í°íŠ¸ë¥¼ C:\Windows\Fonts ë¡œ ë³µì‚¬ ì¤‘...
+copy /y "%FONT_SOURCE%\Paperlogy-*.ttf" "%WINDIR%\Fonts\" >nul
+
+echo [2/2] Windows ë ˆì§€ìŠ¤íŠ¸ë¦¬ì— ì •ì‹ ì‹œìŠ¤í…œ í°íŠ¸ë¡œ ë“±ë¡ ì¤‘...
+powershell -NoProfile -Command ^
+  "$fonts = Get-ChildItem '%FONT_SOURCE%\Paperlogy-*.ttf'; ^
+  foreach ($f in $fonts) { ^
+      $fn = $f.BaseName; ^
+      New-ItemProperty -Path 'HKLM:\Software\Microsoft\Windows NT\CurrentVersion\Fonts' -Name \"$fn (TrueType)\" -Value $f.Name -PropertyType String -Force | Out-Null; ^
+  } ^
+  New-ItemProperty -Path 'HKLM:\Software\Microsoft\Windows NT\CurrentVersion\Fonts' -Name 'Paperlogy (TrueType)' -Value 'Paperlogy-4Regular.ttf' -PropertyType String -Force | Out-Null; ^
+  New-ItemProperty -Path 'HKLM:\Software\Microsoft\Windows NT\CurrentVersion\Fonts' -Name 'Paperlogy Bold (TrueType)' -Value 'Paperlogy-7Bold.ttf' -PropertyType String -Force | Out-Null;"
 
 echo.
 echo ================================================================
-echo   [ÃàÇÏ] Paperlogy 9Á¾ ÆùÆ®°¡ Windows ½Ã½ºÅÛ¿¡ ¿Ïº®ÇÏ°Ô µî·ÏµÇ¾ú½À´Ï´Ù!
-echo   ÀÌÁ¦ ÆÄ¿öÆ÷ÀÎÆ®¸¦ ¿­¸é ¾î¶² µ¦À» ¿­¾îµµ ±Û²ÃÀÌ Àı´ë Ç®¸®Áö ¾Ê½À´Ï´Ù.
+echo   [ì„±ê³µ] Paperlogy 9ì¢… í°íŠ¸ê°€ Windows ì‹œìŠ¤í…œì— ì™„ë²½í•˜ê²Œ ë“±ë¡ë˜ì—ˆìŠµë‹ˆë‹¤!
+echo   ì´ì œ íŒŒì›Œí¬ì¸íŠ¸ë¥¼ ì‹¤í–‰í•˜ë©´ ì„œì²´ê°€ í’€ë¦¬ì§€ ì•Šê³  ê·¸ëŒ€ë¡œ ìœ ì§€ë©ë‹ˆë‹¤.
 echo ================================================================
 pause

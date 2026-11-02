@@ -19,6 +19,7 @@ for k in ['keymap.back', 'keymap.forward', 'keymap.pan', 'keymap.zoom', 'keymap.
 # 2. Register Paperlogy Fonts from project folder & system fonts
 base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 font_dirs = [
+    os.path.join(base_dir, 'Paperlogy'),
     os.path.join(base_dir, 'projects', 'math_assets', 'fonts'),
     os.path.expandvars(r'%LOCALAPPDATA%\Microsoft\Windows\Fonts'),
     r'C:\Windows\Fonts',
