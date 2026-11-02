@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="960" height="540" viewBox="0 0 960 540" font-family="Arial, sans-serif"><rect x="0" y="0" width="960" height="540" fill="#34A853" fill-opacity="0.05" />
+<g id="shape-102" data-pptx-object="shape" data-pptx-frame="66.67 53.33 826.68 106.68" data-pptx-prst="rect" data-pptx-source-ref="slide:102" data-pptx-semantic-object="shape">
+<path d="M 66.67 53.33 L 893.34 53.33 L 893.34 160.01 L 66.67 160.01 Z" fill="none" stroke="none" data-pptx-part="geometry" />
+
+
+<text x="76.27" y="104.26509186" text-anchor="start" xml:space="preserve" font-size="42.67" fill="#202124" font-weight="bold" data-pptx-text-baseline="metrics-v1">학교 현장의 3대 고민</text>
+</g>
+<g id="shape-103" data-pptx-object="shape" data-pptx-frame="66.67 186.67 826.68 333.32" data-pptx-prst="rect" data-pptx-source-ref="slide:103" data-pptx-semantic-object="shape">
+<path d="M 66.67 186.67 L 893.34 186.67 L 893.34 519.99 L 66.67 519.99 Z" fill="none" stroke="none" data-pptx-part="geometry" />
+
+
+<text x="76.27" y="220.26509186" text-anchor="start" xml:space="preserve" font-size="24" fill="#3C4043" data-pptx-text-baseline="metrics-v1" data-pptx-text-model="paragraphs" data-paragraph-line-height="28.8"><tspan><tspan>1. 맞춤형 교육의 한계</tspan></tspan><tspan><tspan>2. 과중한 행정 업무</tspan></tspan><tspan data-paragraph-space-before="0"><tspan>3. 디지털 격차와 윤리적 이슈</tspan></tspan><tspan data-paragraph-space-before="28.8"><tspan>- 쌓여있는 서류와 아이들의 다양한 학습 속도</tspan></tspan></text>
+</g>
+<g id="shape-104" data-pptx-object="connector" data-pptx-frame="66.67 166.67 826.68 0" data-pptx-prst="straightConnector1" data-pptx-source-ref="slide:104" data-pptx-semantic-object="shape">
+<path d="M 66.67 166.67 L 893.34 166.67" fill="none" stroke-width="2.66667" stroke-linecap="butt" stroke="#34A853" stroke-linejoin="round" data-pptx-part="geometry" />
+
+</g></svg>

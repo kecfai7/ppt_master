@@ -1,0 +1,45 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/api/slides",
+      "has": [
+        {
+          "type": "query",
+          "key": "deck",
+          "value": "math"
+        }
+      ],
+      "destination": "/api/slides_math.json"
+    },
+    {
+      "source": "/api/slides",
+      "has": [
+        {
+          "type": "query",
+          "key": "deck",
+          "value": "little_prince"
+        }
+      ],
+      "destination": "/api/slides_prince.json"
+    },
+    {
+      "source": "/api/slides",
+      "destination": "/api/slides_math.json"
+    },
+    {
+      "source": "/download-math",
+      "destination": "/presentations/수학.pptx"
+    },
+    {
+      "source": "/download-prince",
+      "destination": "/presentations/AI 시대-교육의 문법이 바뀌다-어린왕자-자율재생-애니메이션.pptx"
+    },
+    {
+      "source": "/download",
+      "destination": "/presentations/AI 시대-교육의 문법이 바뀌다-어린왕자-자율재생-애니메이션.pptx"
+    }
+  ]
+}
+

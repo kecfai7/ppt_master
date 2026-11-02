@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="960" height="540" viewBox="0 0 960 540" font-family="Arial, sans-serif"><rect x="0" y="0" width="960" height="540" fill="#34A853" fill-opacity="0.05" />
+<g id="shape-130" data-pptx-object="shape" data-pptx-frame="66.67 53.33 826.68 106.68" data-pptx-prst="rect" data-pptx-source-ref="slide:130" data-pptx-semantic-object="shape">
+<path d="M 66.67 53.33 L 893.34 53.33 L 893.34 160.01 L 66.67 160.01 Z" fill="none" stroke="none" data-pptx-part="geometry" />
+
+
+<text x="76.27" y="104.26509186" text-anchor="start" xml:space="preserve" font-size="42.67" fill="#202124" font-weight="bold" data-pptx-text-baseline="metrics-v1">[실전 사례] 업무 효율화</text>
+</g>
+<g id="shape-131" data-pptx-object="shape" data-pptx-frame="66.67 186.67 826.68 333.32" data-pptx-prst="rect" data-pptx-source-ref="slide:131" data-pptx-semantic-object="shape">
+<path d="M 66.67 186.67 L 893.34 186.67 L 893.34 519.99 L 66.67 519.99 Z" fill="none" stroke="none" data-pptx-part="geometry" />
+
+
+<text x="76.27" y="220.26509186" text-anchor="start" xml:space="preserve" font-size="24" fill="#3C4043" data-pptx-text-baseline="metrics-v1" data-pptx-text-model="paragraphs" data-paragraph-line-height="28.8"><tspan><tspan>주간학습안내 &amp; 가정통신문 자동화</tspan></tspan><tspan data-paragraph-space-before="28.8"><tspan>- 업무 시간은 줄이고, 교육의 질은 높이고</tspan></tspan><tspan><tspan>- AI 초안과 교사의 수정/보완의 협업</tspan></tspan></text>
+
+</g>
+<g id="shape-132" data-pptx-object="connector" data-pptx-frame="66.67 166.67 826.68 0" data-pptx-prst="straightConnector1" data-pptx-source-ref="slide:132" data-pptx-semantic-object="shape">
+<path d="M 66.67 166.67 L 893.34 166.67" fill="none" stroke-width="2.66667" stroke-linecap="butt" stroke="#34A853" stroke-linejoin="round" data-pptx-part="geometry" />
+
+</g></svg>

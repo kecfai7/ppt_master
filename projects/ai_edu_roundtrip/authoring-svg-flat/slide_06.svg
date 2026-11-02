@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="960" height="540" viewBox="0 0 960 540" font-family="Arial, sans-serif"><rect x="0" y="0" width="960" height="540" fill="#EA4335" fill-opacity="0.05" />
+<g id="shape-116" data-pptx-object="shape" data-pptx-frame="66.67 53.33 826.68 106.68" data-pptx-prst="rect" data-pptx-source-ref="slide:116" data-pptx-semantic-object="shape">
+<path d="M 66.67 53.33 L 893.34 53.33 L 893.34 160.01 L 66.67 160.01 Z" fill="none" stroke="none" data-pptx-part="geometry" />
+
+
+<text x="76.27" y="104.26509186" text-anchor="start" xml:space="preserve" font-size="42.67" fill="#202124" font-weight="bold" data-pptx-text-baseline="metrics-v1">Google App for Desktop</text>
+</g>
+<g id="shape-117" data-pptx-object="shape" data-pptx-frame="66.67 186.67 826.68 333.32" data-pptx-prst="rect" data-pptx-source-ref="slide:117" data-pptx-semantic-object="shape">
+<path d="M 66.67 186.67 L 893.34 186.67 L 893.34 519.99 L 66.67 519.99 Z" fill="none" stroke="none" data-pptx-part="geometry" />
+
+
+<text x="76.27" y="220.26509186" text-anchor="start" xml:space="preserve" font-size="24" fill="#3C4043" data-pptx-text-baseline="metrics-v1" data-pptx-text-model="paragraphs" data-paragraph-line-height="36"><tspan><tspan>내 컴퓨터의 모든 파일이 AI의 지식이 되는 첫걸음</tspan></tspan><tspan data-paragraph-space-before="21.6"><tspan>- 클라우드 동기화로 모든 자료를 AI와 대화 가능하게 설정</tspan></tspan></text>
+
+</g>
+<g id="shape-118" data-pptx-object="connector" data-pptx-frame="66.67 166.67 826.68 0" data-pptx-prst="straightConnector1" data-pptx-source-ref="slide:118" data-pptx-semantic-object="shape">
+<path d="M 66.67 166.67 L 893.34 166.67" fill="none" stroke-width="2.66667" stroke-linecap="butt" stroke="#EA4335" stroke-linejoin="round" data-pptx-part="geometry" />
+
+</g></svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="960" height="540" viewBox="0 0 960 540" font-family="Arial, sans-serif"><rect x="0" y="0" width="960" height="540" fill="#EA4335" fill-opacity="0.05" />
+<g id="shape-200" data-pptx-object="shape" data-pptx-frame="66.67 53.33 826.68 106.68" data-pptx-prst="rect" data-pptx-source-ref="slide:200" data-pptx-semantic-object="shape">
+<path d="M 66.67 53.33 L 893.34 53.33 L 893.34 160.01 L 66.67 160.01 Z" fill="none" stroke="none" data-pptx-part="geometry" />
+
+
+<text x="76.27" y="104.26509186" text-anchor="start" xml:space="preserve" font-size="42.67" fill="#202124" font-weight="bold" data-pptx-text-baseline="metrics-v1">안전한 AI 활용 (Ethics)</text>
+</g>
+<g id="shape-201" data-pptx-object="shape" data-pptx-frame="66.67 186.67 826.68 333.32" data-pptx-prst="rect" data-pptx-source-ref="slide:201" data-pptx-semantic-object="shape">
+<path d="M 66.67 186.67 L 893.34 186.67 L 893.34 519.99 L 66.67 519.99 Z" fill="none" stroke="none" data-pptx-part="geometry" />
+
+
+<text x="76.27" y="220.26509186" text-anchor="start" xml:space="preserve" font-size="24" fill="#3C4043" data-pptx-text-baseline="metrics-v1" data-pptx-text-model="paragraphs" data-paragraph-line-height="28.8"><tspan><tspan>보안, 저작권, 그리고 딥페이크</tspan></tspan><tspan data-paragraph-space-before="28.8"><tspan>- 우리가 가르쳐야 할 디지털 시민 의식</tspan></tspan><tspan><tspan>- 비판적 사고를 통한 정보 검증</tspan></tspan></text>
+
+</g>
+<g id="shape-202" data-pptx-object="connector" data-pptx-frame="66.67 166.67 826.68 0" data-pptx-prst="straightConnector1" data-pptx-source-ref="slide:202" data-pptx-semantic-object="shape">
+<path d="M 66.67 166.67 L 893.34 166.67" fill="none" stroke-width="2.66667" stroke-linecap="butt" stroke="#EA4335" stroke-linejoin="round" data-pptx-part="geometry" />
+
+</g></svg>

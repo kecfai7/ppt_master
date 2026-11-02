@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="960" height="540" viewBox="0 0 960 540" font-family="Arial, sans-serif"><rect x="0" y="0" width="960" height="540" fill="#FBBC05" fill-opacity="0.05" />
+<g id="shape-95" data-pptx-object="shape" data-pptx-frame="66.67 53.33 826.68 106.68" data-pptx-prst="rect" data-pptx-source-ref="slide:95" data-pptx-semantic-object="shape">
+<path d="M 66.67 53.33 L 893.34 53.33 L 893.34 160.01 L 66.67 160.01 Z" fill="none" stroke="none" data-pptx-part="geometry" />
+
+
+<text x="76.27" y="104.26509186" text-anchor="start" xml:space="preserve" font-size="42.67" fill="#202124" font-weight="bold" data-pptx-text-baseline="metrics-v1">2024 AI의 현주소</text>
+</g>
+<g id="shape-96" data-pptx-object="shape" data-pptx-frame="66.67 186.67 826.68 333.32" data-pptx-prst="rect" data-pptx-source-ref="slide:96" data-pptx-semantic-object="shape">
+<path d="M 66.67 186.67 L 893.34 186.67 L 893.34 519.99 L 66.67 519.99 Z" fill="none" stroke="none" data-pptx-part="geometry" />
+
+
+<text x="76.27" y="220.26509186" text-anchor="start" xml:space="preserve" font-size="24" fill="#3C4043" data-pptx-text-baseline="metrics-v1" data-pptx-text-model="paragraphs" data-paragraph-line-height="28.8"><tspan><tspan>텍스트를 넘어 멀티모달(Multimodal)로</tspan></tspan><tspan data-paragraph-space-before="28.8"><tspan>- 보고, 듣고, 말하고, 추론하는 AI</tspan></tspan><tspan><tspan>- ChatGPT 보이스 모드 및 Google Gemini 영상 인식</tspan></tspan></text>
+
+</g>
+<g id="shape-97" data-pptx-object="connector" data-pptx-frame="66.67 166.67 826.68 0" data-pptx-prst="straightConnector1" data-pptx-source-ref="slide:97" data-pptx-semantic-object="shape">
+<path d="M 66.67 166.67 L 893.34 166.67" fill="none" stroke-width="2.66667" stroke-linecap="butt" stroke="#FBBC05" stroke-linejoin="round" data-pptx-part="geometry" />
+
+</g></svg>

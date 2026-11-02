@@ -1,0 +1,31 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.spec
+
+# Caches
+.cache/
+.pytest_cache/
+mpl_cache/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Temporary outputs
+temp_*.js
+test_*.png
+test_*.pptx
+
+# Submodules / Sub-repositories
+ppt-master/
+

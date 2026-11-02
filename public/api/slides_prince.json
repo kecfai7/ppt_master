@@ -1,0 +1,178 @@
+[
+  {
+    "id": 1,
+    "title": "Slide 01",
+    "svg_url": "/svg/slide_01.svg",
+    "audio_url": "/audio/slide_01.mp3",
+    "notes": "﻿안녕하세요 선생님 여러분, AI 시대 교육의 문법이 바뀌다 강의를 시작하겠습니다.\n",
+    "deck": "little_prince"
+  },
+  {
+    "id": 2,
+    "title": "Slide 02",
+    "svg_url": "/svg/slide_02.svg",
+    "audio_url": "/audio/slide_02.mp3",
+    "notes": "",
+    "deck": "little_prince"
+  },
+  {
+    "id": 3,
+    "title": "Slide 03",
+    "svg_url": "/svg/slide_03.svg",
+    "audio_url": "/audio/slide_03.mp3",
+    "notes": "",
+    "deck": "little_prince"
+  },
+  {
+    "id": 4,
+    "title": "Slide 04",
+    "svg_url": "/svg/slide_04.svg",
+    "audio_url": "/audio/slide_04.mp3",
+    "notes": "",
+    "deck": "little_prince"
+  },
+  {
+    "id": 5,
+    "title": "Slide 05",
+    "svg_url": "/svg/slide_05.svg",
+    "audio_url": "/audio/slide_05.mp3",
+    "notes": "",
+    "deck": "little_prince"
+  },
+  {
+    "id": 6,
+    "title": "Slide 06",
+    "svg_url": "/svg/slide_06.svg",
+    "audio_url": "/audio/slide_06.mp3",
+    "notes": "",
+    "deck": "little_prince"
+  },
+  {
+    "id": 7,
+    "title": "Slide 07",
+    "svg_url": "/svg/slide_07.svg",
+    "audio_url": "/audio/slide_07.mp3",
+    "notes": "",
+    "deck": "little_prince"
+  },
+  {
+    "id": 8,
+    "title": "Slide 08",
+    "svg_url": "/svg/slide_08.svg",
+    "audio_url": "/audio/slide_08.mp3",
+    "notes": "",
+    "deck": "little_prince"
+  },
+  {
+    "id": 9,
+    "title": "Slide 09",
+    "svg_url": "/svg/slide_09.svg",
+    "audio_url": "/audio/slide_09.mp3",
+    "notes": "",
+    "deck": "little_prince"
+  },
+  {
+    "id": 10,
+    "title": "Slide 10",
+    "svg_url": "/svg/slide_10.svg",
+    "audio_url": "/audio/slide_10.mp3",
+    "notes": "",
+    "deck": "little_prince"
+  },
+  {
+    "id": 11,
+    "title": "Slide 11",
+    "svg_url": "/svg/slide_11.svg",
+    "audio_url": "/audio/slide_11.mp3",
+    "notes": "",
+    "deck": "little_prince"
+  },
+  {
+    "id": 12,
+    "title": "Slide 12",
+    "svg_url": "/svg/slide_12.svg",
+    "audio_url": "/audio/slide_12.mp3",
+    "notes": "",
+    "deck": "little_prince"
+  },
+  {
+    "id": 13,
+    "title": "Slide 13",
+    "svg_url": "/svg/slide_13.svg",
+    "audio_url": "/audio/slide_13.mp3",
+    "notes": "",
+    "deck": "little_prince"
+  },
+  {
+    "id": 14,
+    "title": "Slide 14",
+    "svg_url": "/svg/slide_14.svg",
+    "audio_url": "/audio/slide_14.mp3",
+    "notes": "",
+    "deck": "little_prince"
+  },
+  {
+    "id": 15,
+    "title": "Slide 15",
+    "svg_url": "/svg/slide_15.svg",
+    "audio_url": "/audio/slide_15.mp3",
+    "notes": "",
+    "deck": "little_prince"
+  },
+  {
+    "id": 16,
+    "title": "Slide 16",
+    "svg_url": "/svg/slide_16.svg",
+    "audio_url": "/audio/slide_16.mp3",
+    "notes": "",
+    "deck": "little_prince"
+  },
+  {
+    "id": 17,
+    "title": "Slide 17",
+    "svg_url": "/svg/slide_17.svg",
+    "audio_url": "/audio/slide_17.mp3",
+    "notes": "",
+    "deck": "little_prince"
+  },
+  {
+    "id": 18,
+    "title": "Slide 18",
+    "svg_url": "/svg/slide_18.svg",
+    "audio_url": "/audio/slide_18.mp3",
+    "notes": "",
+    "deck": "little_prince"
+  },
+  {
+    "id": 19,
+    "title": "Slide 19",
+    "svg_url": "/svg/slide_19.svg",
+    "audio_url": "/audio/slide_19.mp3",
+    "notes": "",
+    "deck": "little_prince"
+  },
+  {
+    "id": 20,
+    "title": "Slide 20",
+    "svg_url": "/svg/slide_20.svg",
+    "audio_url": "/audio/slide_20.mp3",
+    "notes": "",
+    "deck": "little_prince"
+  },
+  {
+    "id": 21,
+    "title": "Slide 21",
+    "svg_url": "/svg/slide_21.svg",
+    "audio_url": "/audio/slide_21.mp3",
+    "notes": "",
+    "deck": "little_prince"
+  },
+  {
+    "id": 22,
+    "title": "Slide 22",
+    "svg_url": "/svg/slide_22.svg",
+    "audio_url": "/audio/slide_22.mp3",
+    "notes": "",
+    "deck": "little_prince"
+  }
+]

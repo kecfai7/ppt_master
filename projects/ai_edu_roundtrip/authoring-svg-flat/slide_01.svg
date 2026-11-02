@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="960" height="540" viewBox="0 0 960 540" font-family="Arial, sans-serif"><image href="../images/image1.png" x="0" y="0" width="960" height="540" preserveAspectRatio="none" />
+<g id="shape-54" data-pptx-object="group" data-pptx-frame="-130 -40 1150 700" data-pptx-source-ref="slide:54">
+<g id="shape-55" data-pptx-object="shape" data-pptx-frame="780 -40 240 240" data-pptx-prst="ellipse" data-pptx-source-ref="slide:55" data-pptx-semantic-object="shape">
+<path d="M 780 80 A 120 120 0 0 1 900 -40 A 120 120 0 0 1 1020 80 A 120 120 0 0 1 900 200 A 120 120 0 0 1 780 80 Z" fill="#4285F4" fill-opacity="0.06" stroke="none" data-pptx-part="geometry" />
+
+
+</g>
+<g id="shape-56" data-pptx-object="shape" data-pptx-frame="-130 300 360 360" data-pptx-prst="ellipse" data-pptx-source-ref="slide:56" data-pptx-semantic-object="shape">
+<path d="M -130 480 A 180 180 0 0 1 50 300 A 180 180 0 0 1 230 480 A 180 180 0 0 1 50 660 A 180 180 0 0 1 -130 480 Z" fill="#34A853" fill-opacity="0.04" stroke="none" data-pptx-part="geometry" />
+
+
+</g>
+<g id="shape-57" data-pptx-object="shape" data-pptx-frame="66 60 130.02 28" data-pptx-prst="roundRect" data-pptx-av-adj="val 50000" data-pptx-source-ref="slide:57" data-pptx-semantic-object="shape">
+<path d="M 66 74 A 14 14 0 0 1 80 60 L 182.02 60 A 14 14 0 0 1 196.02 74 L 196.02 74 A 14 14 0 0 1 182.02 88 L 80 88 A 14 14 0 0 1 66 74 Z" fill="#E8F0FE" stroke="none" data-pptx-part="geometry" />
+
+
+</g>
+</g>
+<g id="shape-58" data-pptx-object="shape" data-pptx-frame="66 60 130.02 28" data-pptx-prst="rect" data-pptx-source-ref="slide:58" data-pptx-semantic-object="shape">
+<path d="M 66 60 L 196.02 60 L 196.02 88 L 66 88 Z" fill="none" stroke="none" data-pptx-part="geometry" />
+
+
+<text x="131.01" y="78.6" text-anchor="middle" xml:space="preserve" font-size="12.33" fill="#1A73E8" font-weight="bold" data-pptx-text-baseline="metrics-v1">FUTURE EDUCATION</text>
+</g>
+<g id="shape-59" data-pptx-object="shape" data-pptx-frame="66 102 460 110.02" data-pptx-prst="rect" data-pptx-source-ref="slide:59" data-pptx-semantic-object="shape">
+<path d="M 66 102 L 526 102 L 526 212.02 L 66 212.02 Z" fill="#000000" fill-opacity="0" stroke="none" data-pptx-part="geometry" />
+
+
+<text x="66" y="143.33333333" text-anchor="start" xml:space="preserve" font-size="42.67" fill="#1A73E8" data-pptx-text-baseline="metrics-v1"><tspan>AI 시대</tspan><tspan fill="#1F2937">, 교육의 문법이 바뀌다</tspan></text>
+</g>
+<g id="shape-60" data-pptx-object="group" data-pptx-frame="66 225 460 100" data-pptx-source-ref="slide:60">
+<g id="shape-61" data-pptx-object="shape" data-pptx-frame="66 225 460 100" data-pptx-prst="roundRect" data-pptx-av-adj="val 14000" data-pptx-source-ref="slide:61" data-pptx-semantic-object="shape">
+<path d="M 66 239 A 14 14 0 0 1 80 225 L 512 225 A 14 14 0 0 1 526 239 L 526 311 A 14 14 0 0 1 512 325 L 80 325 A 14 14 0 0 1 66 311 Z" fill="#FFFFFF" stroke-width="1.50131" stroke-linecap="butt" stroke="#E2E8F0" stroke-linejoin="round" data-pptx-part="geometry" />
+
+
+</g>
+<g id="shape-62" data-pptx-object="shape" data-pptx-frame="66 225 5.01 100" data-pptx-prst="roundRect" data-pptx-av-adj="val 50000" data-pptx-source-ref="slide:62" data-pptx-semantic-object="shape">
+<path d="M 66 227.5 A 2.5 2.5 0 0 1 68.5 225 L 68.5 225 A 2.5 2.5 0 0 1 71.01 227.5 L 71.01 322.5 A 2.5 2.5 0 0 1 68.5 325 L 68.5 325 A 2.5 2.5 0 0 1 66 322.5 Z" fill="#1A73E8" stroke="none" data-pptx-part="geometry" />
+
+
+</g>
+<g id="shape-63" data-pptx-object="shape" data-pptx-frame="90 225 416 100" data-pptx-prst="rect" data-pptx-source-ref="slide:63">
+
+<path d="M 90 225 L 506 225 L 506 325 L 90 325 Z" fill="none" stroke="none" />
+
+
+<text x="90" y="253.86666667" text-anchor="start" xml:space="preserve" font-size="14.67" fill="#1A73E8" font-weight="bold" data-pptx-text-baseline="metrics-v1">KEY FOCUS</text>
+<text x="90" y="282.8" text-anchor="start" xml:space="preserve" font-size="20" fill="#1E293B" font-weight="bold" data-pptx-text-baseline="metrics-v1"><tspan>구글 AI와 함께하는 지능형 업무 혁신과 맞춤형</tspan><tspan x="90" dy="24"> 학습</tspan></text>
+</g>
+</g>
+<g id="shape-64" data-pptx-object="group" data-pptx-frame="66 340 460 120" data-pptx-source-ref="slide:64">
+<g id="shape-65" data-pptx-object="shape" data-pptx-frame="66 340 460 120" data-pptx-prst="roundRect" data-pptx-av-adj="val 11666" data-pptx-source-ref="slide:65" data-pptx-semantic-object="shape">
+<path d="M 66 354 A 14 14 0 0 1 80 340 L 512 340 A 14 14 0 0 1 526 354 L 526 446 A 14 14 0 0 1 512 460 L 80 460 A 14 14 0 0 1 66 446 Z" fill="#1E293B" stroke="none" data-pptx-part="geometry" />
+
+
+</g>
+<g id="shape-66" data-pptx-object="shape" data-pptx-frame="90 340 412 120" data-pptx-prst="rect" data-pptx-source-ref="slide:66">
+
+<path d="M 90 340 L 502 340 L 502 460 L 90 460 Z" fill="none" stroke="none" />
+
+
+<text x="90" y="379.73333333" text-anchor="start" xml:space="preserve" font-size="13.33" fill="#94A3B8" font-weight="bold" data-pptx-text-baseline="metrics-v1">OUR MISSION</text>
+<text x="90" y="407.73333333" text-anchor="start" xml:space="preserve" font-size="18" fill="#F8FAFC" data-pptx-text-baseline="metrics-v1"><tspan>- 오늘 우리는 기술이 아닌, 우리 아이들의 미래를 </tspan><tspan x="90" dy="21.6">이야기하러 모였습니다.</tspan></text>
+</g>
+</g>
+<g id="shape-67" data-pptx-object="group" data-pptx-frame="550 65 358.02 418.02" data-pptx-source-ref="slide:67">
+<g id="shape-68" data-pptx-object="shape" data-pptx-frame="558 73 350.02 410.02" data-pptx-prst="roundRect" data-pptx-av-adj="val 5714" data-pptx-source-ref="slide:68" data-pptx-semantic-object="shape">
+<path d="M 558 93 A 20 20 0 0 1 578 73 L 888.02 73 A 20 20 0 0 1 908.02 93 L 908.02 463.02 A 20 20 0 0 1 888.02 483.02 L 578 483.02 A 20 20 0 0 1 558 463.02 Z" fill="#E2E8F0" fill-opacity="0.5" stroke="none" data-pptx-part="geometry" />
+
+
+</g>
+<g id="shape-69" data-pptx-object="picture" data-pptx-frame="550 65 350.02 410.02" data-pptx-source-ref="slide:69">
+<svg data-pptx-object="picture" data-pptx-frame="550 65 350.02 410.02" x="550" y="65" width="350.02" height="410.02" viewBox="0 0.06071 1 0.87858" preserveAspectRatio="none" overflow="hidden"><image href="../images/image3.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none" /></svg>
+</g>
+</g></svg>

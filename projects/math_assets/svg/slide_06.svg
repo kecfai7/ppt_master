@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960 540" width="960" height="540" style="background:#0F172A; font-family:'Paperlogy', 'Pretendard', sans-serif;">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1120" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.95" />
+    </linearGradient>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+  <rect width="960" height="540" fill="url(#bgGrad)"/>
+  <!-- Subtle decorative grid -->
+  <g opacity="0.04" stroke="#FFFFFF" stroke-width="1">
+    <line x1="0" y1="135" x2="960" y2="135"/>
+    <line x1="0" y1="270" x2="960" y2="270"/>
+    <line x1="0" y1="405" x2="960" y2="405"/>
+    <line x1="240" y1="0" x2="240" y2="540"/>
+    <line x1="480" y1="0" x2="480" y2="540"/>
+    <line x1="720" y1="0" x2="720" y2="540"/>
+  </g>
+  
+  <!-- Header -->
+  <g transform="translate(60, 30)">
+    <rect x="0" y="0" width="220" height="22" rx="6" fill="#FBBF24" fill-opacity="0.12" stroke="#FBBF24" stroke-width="1"/>
+    <text x="110" y="15" fill="#FBBF24" font-size="10.5" font-weight="700" text-anchor="middle">●  INTERACTIVE CLASSROOM TOOL</text>
+    <text x="0" y="52" fill="#F8FAFC" font-size="22" font-weight="800">마우스 &amp; 키보드 조절 수학 시뮬레이터 실행 안내</text>
+    <text x="0" y="74" fill="#94A3B8" font-size="12" font-weight="500">교실 프로젝터 및 학생 태블릿에서 실시간으로 수식과 그래프를 탐구하는 GUI 도구</text>
+  </g>
+  
+  <g transform="translate(60, 120)" filter="url(#cardShadow)">
+    <rect width="400" height="370" rx="16" fill="url(#cardGrad)" stroke="#38BDF8" stroke-width="1.8"/>
+    <text x="24" y="32" fill="#38BDF8" font-size="15" font-weight="700">🎮 마우스 &amp; 키보드 조절 가이드</text>
+    <line x1="24" y1="42" x2="376" y2="42" stroke="#334155" stroke-width="1"/>
+    <text x="24" y="70" fill="#F8FAFC" font-size="12" font-weight="700">• 실행 방법 1: 상단 [Live Math Lab] 탭 클릭</text>
+    <text x="24" y="96" fill="#F8FAFC" font-size="12" font-weight="700">• 실행 방법 2: '수학_시뮬레이터_실행.bat' 더블 클릭</text>
+    <text x="24" y="126" fill="#E2E8F0" font-size="11.5" font-weight="600">• 모드 즉시 전환 키:</text>
+    <text x="36" y="148" fill="#94A3B8" font-size="11">[1] 이차함수   [2] 삼각함수</text>
+    <text x="36" y="170" fill="#94A3B8" font-size="11">[3] 미분 접선   [4] 정적분 리만합</text>
+    <text x="24" y="202" fill="#E2E8F0" font-size="11.5" font-weight="600">• 마우스 조작: 슬라이더 드래그 or [-] [+] 클릭</text>
+    <text x="24" y="232" fill="#E2E8F0" font-size="11.5" font-weight="600">• 키보드 조작:</text>
+    <text x="36" y="254" fill="#94A3B8" font-size="11">- [↑ / ↓] : 조절할 파라미터 선택</text>
+    <text x="36" y="276" fill="#94A3B8" font-size="11">- [← / →] : 0.05 단위 정밀 수치 조절</text>
+    <text x="36" y="298" fill="#94A3B8" font-size="11">- [R]     : 기본 수치 초기화 (Reset)</text>
+    <rect x="24" y="318" width="352" height="38" rx="8" fill="#38BDF8" fill-opacity="0.12" stroke="#38BDF8" stroke-width="1"/>
+    <text x="200" y="342" fill="#38BDF8" font-size="12" font-weight="700" text-anchor="middle">💡 웹 브라우저에서도 [Live Math Lab] 탭으로 즉시 조작 가능!</text>
+  </g>
+  
+  <g transform="translate(480, 120)" filter="url(#cardShadow)">
+    <rect width="420" height="370" rx="16" fill="url(#cardGrad)" stroke="#FBBF24" stroke-width="1.8"/>
+    <text x="24" y="32" fill="#FBBF24" font-size="15" font-weight="700">💡 수업 현장 활용 시나리오</text>
+    <line x1="24" y1="42" x2="396" y2="42" stroke="#334155" stroke-width="1"/>
+    <text x="24" y="70" fill="#F8FAFC" font-size="12" font-weight="700">1. 교사의 발문 &amp; 학생 예측 유도</text>
+    <text x="36" y="92" fill="#94A3B8" font-size="11">&quot;a 계수가 음수가 되면 그래프는 어떻게 변할까?&quot;</text>
+    
+    <text x="24" y="130" fill="#F8FAFC" font-size="12" font-weight="700">2. 마우스 드래그 &amp; 키보드 즉각 검증</text>
+    <text x="36" y="152" fill="#94A3B8" font-size="11">슬라이더를 움직여 학생들이 화면 변화를 즉시 목격</text>
+    
+    <text x="24" y="190" fill="#F8FAFC" font-size="12" font-weight="700">3. 수학적 성질 실시간 디스플레이</text>
+    <text x="36" y="212" fill="#94A3B8" font-size="11">우측 패널에 꼭짓점, 판별식, 접선 방정식이 실시간 갱신</text>
+    
+    <text x="24" y="250" fill="#F8FAFC" font-size="12" font-weight="700">4. 자기주도 탐구 과제 연계</text>
+    <text x="36" y="272" fill="#94A3B8" font-size="11">학생들이 직접 슬라이더를 조작하며 수학적 성질을 스스로 발견</text>
+    
+    <rect x="24" y="318" width="372" height="38" rx="8" fill="#FBBF24" fill-opacity="0.12" stroke="#FBBF24" stroke-width="1"/>
+    <text x="210" y="342" fill="#FBBF24" font-size="12" font-weight="700" text-anchor="middle">🎯 직관적 기하학 학습을 통한 수학 흥미 극대화</text>
+  </g>
+
+</svg>
