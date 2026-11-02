@@ -193,6 +193,27 @@ class MathInteractiveApp:
             s.label.set_fontfamily(FONT_FAMILY)
         self.update_plot()
 
+    def plot_point_badge(self, x, y, label, color='#38bdf8', offset=(10, 10), show_proj=True, marker='o', size=7):
+        """Helper to plot a mathematical point with coordinates and dashed projections to axes"""
+        self.ax.plot([x], [y], marker=marker, color=color, markersize=size, zorder=6)
+        if show_proj:
+            self.ax.plot([x, x], [0, y], color=color, ls=':', lw=1.1, alpha=0.6, zorder=4)
+            self.ax.plot([0, x], [y, y], color=color, ls=':', lw=1.1, alpha=0.6, zorder=4)
+        bbox = dict(boxstyle='round,pad=0.28', facecolor='#0f172a', edgecolor=color, alpha=0.9, lw=1.2)
+        self.ax.annotate(
+            label,
+            xy=(x, y),
+            xytext=offset,
+            textcoords='offset points',
+            color='#f8fafc',
+            fontsize=8.5,
+            fontfamily=FONT_FAMILY,
+            fontweight='bold',
+            bbox=bbox,
+            zorder=7,
+            arrowprops=dict(arrowstyle='->', connectionstyle='arc3,rad=0.08', color=color, lw=1.0, alpha=0.8)
+        )
+
     def update_plot(self):
         self.ax.clear()
         self.ax.set_facecolor('#1e293b')
@@ -213,17 +234,35 @@ class MathInteractiveApp:
             y = a * x**2 + b * x + c
             self.ax.plot(x, y, color='#38bdf8', lw=2.8, label=r'$f(x) = ax^2 + bx + c$')
 
+            # 1. 꼭짓점 (Vertex)
             if abs(a) > 1e-5:
                 vx = -b / (2 * a)
                 vy = a * vx**2 + b * vx + c
-                self.ax.plot([vx], [vy], marker='o', color='#f43f5e', markersize=8)
                 self.ax.axvline(vx, color='#fbbf24', ls='--', lw=1.2, alpha=0.7)
+                self.plot_point_badge(vx, vy, f"꼭짓점 V({vx:.2f}, {vy:.2f})", color='#f43f5e', offset=(15, 12 if a > 0 else -25))
                 vertex_str = f"({vx:.2f}, {vy:.2f})"
             else:
                 vertex_str = "N/A (직선)"
 
+            # 2. y-절편 (0, c)
+            if -6 <= c <= 8:
+                self.plot_point_badge(0, c, f"y절편 (0, {c:.2f})", color='#a855f7', offset=(-85, 10))
+
+            # 3. x-절편 (근 / x축과의 교점)
             D = b**2 - 4 * a * c
             d_desc = "서로 다른 두 실근" if D > 0 else ("중근 (접함)" if abs(D) < 1e-4 else "서로 다른 두 허근")
+            if abs(a) > 1e-5:
+                if D > 1e-5:
+                    r1 = (-b - np.sqrt(D)) / (2 * a)
+                    r2 = (-b + np.sqrt(D)) / (2 * a)
+                    if -5 <= r1 <= 5:
+                        self.plot_point_badge(r1, 0, f"x절편 ({r1:.2f}, 0)", color='#10b981', offset=(-60, -22), show_proj=False)
+                    if -5 <= r2 <= 5:
+                        self.plot_point_badge(r2, 0, f"x절편 ({r2:.2f}, 0)", color='#10b981', offset=(10, -22), show_proj=False)
+                elif abs(D) <= 1e-5:
+                    r = -b / (2 * a)
+                    if -5 <= r <= 5:
+                        self.plot_point_badge(r, 0, f"중근 ({r:.2f}, 0)", color='#10b981', offset=(12, -22), show_proj=False)
 
             self.ax.set_xlim(-5, 5)
             self.ax.set_ylim(-6, 8)
@@ -234,8 +273,9 @@ class MathInteractiveApp:
                    f"• 최고차항 a: {a:.2f}\n" \
                    f"• 대칭축 x : {vertex_str.split(',')[0].replace('(', '')}\n" \
                    f"• 꼭짓점   : {vertex_str}\n" \
+                   f"• y-절편   : (0, {c:.2f})\n" \
                    f"• 판별식 D : {D:.2f}\n" \
-                   f"• 실근 상태: {d_desc}"
+                   f"• x-절편   : {d_desc}"
             self.info_text.set_text(info)
 
         elif self.mode == 1:
@@ -243,6 +283,32 @@ class MathInteractiveApp:
             x = np.linspace(-2*np.pi, 2*np.pi, 500)
             y = A * np.sin(B * x - C)
             self.ax.plot(x, y, color='#38bdf8', lw=2.8)
+
+            # 1. y-절편
+            y_int = A * np.sin(-C)
+            self.plot_point_badge(0, y_int, f"y절편 (0, {y_int:.2f})", color='#a855f7', offset=(-85, 12))
+
+            # 2. x-절편 (x축과의 교점들)
+            if abs(B) > 1e-4:
+                # B*x - C = k*pi  =>  x = (C + k*pi)/B
+                k_vals = range(-8, 9)
+                for k in k_vals:
+                    xk = (C + k * np.pi) / B
+                    if -2*np.pi <= xk <= 2*np.pi and abs(xk) > 0.15:
+                        self.ax.plot([xk], [0], marker='o', color='#10b981', markersize=5, zorder=5)
+                # Mark main visible x-intercept near origin
+                xk_main = (C + round(-C / np.pi) * np.pi) / B
+                if -2*np.pi <= xk_main <= 2*np.pi:
+                    self.plot_point_badge(xk_main, 0, f"교점 ({xk_main:.2f}, 0)", color='#10b981', offset=(8, -20), show_proj=False)
+
+            # 3. 최댓값 극점
+            if abs(B) > 1e-4:
+                x_peak = (C + np.pi / 2) / B
+                while x_peak < -2*np.pi: x_peak += 2*np.pi/abs(B)
+                while x_peak > 2*np.pi: x_peak -= 2*np.pi/abs(B)
+                if -2*np.pi <= x_peak <= 2*np.pi:
+                    y_peak = A * np.sin(B * x_peak - C)
+                    self.plot_point_badge(x_peak, y_peak, f"극값 ({x_peak:.2f}, {y_peak:.2f})", color='#fbbf24', offset=(10, 12 if y_peak > 0 else -22))
 
             T = (2 * np.pi) / abs(B) if abs(B) > 1e-4 else np.inf
             self.ax.set_xlim(-2*np.pi, 2*np.pi)
@@ -254,8 +320,9 @@ class MathInteractiveApp:
             info = f"■ 삼각함수 파동 분석\n" \
                    f"----------------------\n" \
                    f"• 진폭 |A|  : {abs(A):.2f}\n" \
-                   f"• 주기 T    : {T:.2f} ({T/np.pi:.2f}π)\n" \
-                   f"• 위상 이동 : {C/B:.2f}\n" \
+                   f"• 주기 T    : {T:.2f} ({T/np.pi:.2f} rad)\n" \
+                   f"• 위상 이동 : {C/B if abs(B)>1e-4 else 0:.2f}\n" \
+                   f"• y-절편    : (0, {y_int:.2f})\n" \
                    f"• 최댓값    : {abs(A):.2f}\n" \
                    f"• 최솟값    : {-abs(A):.2f}"
             self.info_text.set_text(info)
@@ -273,18 +340,38 @@ class MathInteractiveApp:
             slope = df(x0)
             tangent_line = y0 + slope * (x - x0)
             self.ax.plot(x, tangent_line, color='#fbbf24', lw=2.2, ls='-')
-            self.ax.plot([x0], [y0], marker='o', color='#f43f5e', markersize=8)
+
+            # 1. 움직이는 접점 P(x0, y0)
+            self.plot_point_badge(x0, y0, f"접점 P({x0:.2f}, {y0:.2f})\n[기울기 m={slope:.2f}]", color='#f43f5e', offset=(15, 15))
+
+            # 2. 곡선 f(x)의 y-절편 (0, c)
+            if -4 <= c <= 4:
+                self.plot_point_badge(0, c, f"f y절편 (0, {c:.2f})", color='#a855f7', offset=(-80, 10))
+
+            # 3. 접선의 y-절편 (0, y0 - slope * x0)
+            y_tan_int = y0 - slope * x0
+            if -4 <= y_tan_int <= 4:
+                self.plot_point_badge(0, y_tan_int, f"접선 y절편 (0, {y_tan_int:.2f})", color='#eab308', offset=(-85, -20))
+
+            # 4. 접선과 3차곡선의 제2 교점 Q (-2*x0, f(-2*x0))
+            if abs(a) > 1e-4:
+                x_q = -2 * x0
+                y_q = f(x_q)
+                if -2.5 <= x_q <= 2.5 and -4 <= y_q <= 4 and abs(x_q - x0) > 0.15:
+                    self.plot_point_badge(x_q, y_q, f"교점 Q({x_q:.2f}, {y_q:.2f})", color='#38bdf8', offset=(-75 if x_q > 0 else 15, -20 if y_q > 0 else 15))
 
             self.ax.set_xlim(-2.5, 2.5)
             self.ax.set_ylim(-4, 4)
-            self.ax.set_title(rf'$f(x) = {a:.2f}x^3 - x + {c:.2f} \quad \implies \quad f^\prime({x0:.2f}) = {slope:.2f}$', color='#f8fafc', fontsize=12, pad=10)
+            self.ax.set_title(rf'$f(x) = {a:.2f}x^3 - x + {c:.2f} \quad \Rightarrow \quad f^\prime({x0:.2f}) = {slope:.2f}$', color='#f8fafc', fontsize=12, pad=10)
 
             info = f"■ 미분계수(접선) 분석\n" \
                    f"----------------------\n" \
                    f"• 접점 P(x0): ({x0:.2f}, {y0:.2f})\n" \
                    f"• 순간변화율: m = {slope:.2f}\n" \
                    f"• 접선 식   :\n" \
-                   f"  y = {slope:.2f}x + {y0 - slope*x0:.2f}"
+                   f"  y = {slope:.2f}x + {y_tan_int:.2f}\n" \
+                   f"• 곡선 y절편: (0, {c:.2f})\n" \
+                   f"• 제2 교점 Q: ({(-2*x0):.2f}, {f(-2*x0):.2f})"
             self.info_text.set_text(info)
 
         elif self.mode == 3:
@@ -307,6 +394,16 @@ class MathInteractiveApp:
             exact_val = np.trapezoid(f(x_int), x_int)
             error = abs(riemann_sum - exact_val)
 
+            # 1. 적분 경계점 A(a, f(a)), B(b, f(b))
+            self.plot_point_badge(a_val, f(a_val), f"A({a_val:.1f}, {f(a_val):.2f})", color='#38bdf8', offset=(-60, 12))
+            self.plot_point_badge(b_val, f(b_val), f"B({b_val:.1f}, {f(b_val):.2f})", color='#f43f5e', offset=(10, 12))
+
+            # 2. 극댓값 / 꼭짓점 (2, 3)
+            self.plot_point_badge(2.0, 3.0, "극댓값 (2.00, 3.00)", color='#fbbf24', offset=(-45, 14))
+
+            # 3. y-절편 (0, 1.4)
+            self.plot_point_badge(0, f(0), f"y절편 (0, {f(0):.2f})", color='#a855f7', offset=(10, -18))
+
             self.ax.set_xlim(0, 5)
             self.ax.set_ylim(-0.5, 3.8)
             self.ax.set_title(rf'$\int_{{{a_val:.1f}}}^{{{b_val:.1f}}} f(x)\,dx \approx {riemann_sum:.3f} \quad (n={n})$', color='#f8fafc', fontsize=12, pad=10)
@@ -314,6 +411,8 @@ class MathInteractiveApp:
             info = f"■ 정적분 리만합 분석\n" \
                    f"----------------------\n" \
                    f"• 적분 구간 : [{a_val:.1f}, {b_val:.1f}]\n" \
+                   f"• 점 A 좌표 : ({a_val:.1f}, {f(a_val):.2f})\n" \
+                   f"• 점 B 좌표 : ({b_val:.1f}, {f(b_val):.2f})\n" \
                    f"• 분할 수 n : {n}\n" \
                    f"• 리만합 근사: {riemann_sum:.4f}\n" \
                    f"• 정적분 참값: {exact_val:.4f}\n" \
